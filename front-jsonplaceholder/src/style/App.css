@@ -1,0 +1,254 @@
+/*font family normal para los textos principales*/
+@font-face {
+  font-family: "WorkSans-Normal";
+  src: local("WorkSans-Normal"),
+    url("../fonts/WorkSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+.App {
+  text-align: center;
+  font-family: 'WorkSans-Normal';
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+div div .napaddin{
+padding: 0;
+}
+
+.font-main{
+  font-family: 'WorkSans-Normal';
+}
+
+.div-load {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-image: url("../icons/Loading.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90px;
+  z-index: 10000;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.tamano-imagen{
+  height: 120px;
+  width: 314px;
+}
+
+.excel{
+  background-image: url('../icons/excel2.png');
+  width: 45px ;
+  height: 45px ;
+}
+
+.btn-icon {
+  background-color: transparent;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  height: 25px;
+  outline: none;
+  width: 18px;
+}
+
+.btn-icon:focus{
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.flex-excel{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*Scrol estilos */
+/* ::-webkit-scrollbar-thumb {
+  background-color: rgba(124, 124, 124, 0.47);
+  border-radius: 20px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+} */
+
+
+.icon-editar{
+  background-image: url('../icons/EDITAR.svg');
+}
+
+.icon-eliminar{
+  background-image: url('../icons/ELIMINAR.svg');
+}
+.flx{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+div div div div  .btn-principales{
+  align-items: center;
+  background-color: #212529;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  font-family: 'WorkSans-Normal';
+  font-size: 12px;
+  justify-content: center;
+  text-align: center;
+  height: 29px;
+  width: 156px;
+}
+
+div div div div  .btn-principales:focus{
+box-shadow: none ;
+outline: none ;
+}
+
+div div div div  .modal-title.h4 {
+  font-size: 18px;
+  display: flex;
+  margin: auto;
+  color: #212529;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: 'WorkSans-Normal';
+}
+
+button.btn-close, button.btn-close:focus {
+  margin: 0px;
+  display: flex;
+  outline: none;
+  box-shadow: none;
+  height: 15px;
+  width: 15px;
+  line-height: 15px;
+  background-size: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2px;
+}
+
+div div div div .titilos-modal {
+  color: var(--main-color);
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  margin: auto;
+  text-transform: capitalize;
+}
+
+div div div div .icon-cerrar-modal {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  box-shadow: none;
+  display: flex;
+  height: 15px;
+  line-height: 15px;
+  margin: 0;
+  outline: none;
+  padding: 2px;
+  width: 15px;
+  box-shadow: none ;
+}
+
+.icon-cancel {
+  background-image: url("../icons/Cerrar.svg");
+  width: 12px;
+}
+
+div > .btn-close{
+  display: none ;
+}
+
+div div div div  .lbl {
+  font-size: 12px;
+  display: flex;
+  margin: auto;
+  color: #212529;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: 'WorkSans-Normal';
+}
+
+.crear{
+  background-image: url('../icons/AGREGA.svg');
+}
+
+.user-naame:hover{
+  text-decoration: none;
+  color: #007bff;
+}
+
+.user-naame{
+  text-decoration: none;
+  color: white;
+}
+
+.flx-user-opions{
+  display: flex;
+  align-items: center;
+}
+
+.hever-card:hover{
+  box-shadow: 0 0 14.3676px rgb(0 0 0 / 25%);
+}
+
+.tl-card{
+font-size: 17px;
+font-weight: bold;
+}
+
+.scroll-card{
+  overflow-y: scroll;
+  height: 286px;
+}
+
+.lise-card{
+  overflow-y: scroll;
+  height: 417px;
+}
